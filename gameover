@@ -1,0 +1,17 @@
+function gameOver() {
+  swal(
+    {
+      title: `Fim de Jogo!!!`,
+      text: "Obrigada por jogar!!",
+      imageUrl:
+        "https://raw.githubusercontent.com/whitehatjr/PiratesInvasion/main/assets/boat.png",
+      imageSize: "150x150",
+      confirmButtonText: "Jogar Novamente"
+    },
+    function(isConfirm) {
+      if (isConfirm) {
+        location.reload();
+      }
+    }
+  );
+}
